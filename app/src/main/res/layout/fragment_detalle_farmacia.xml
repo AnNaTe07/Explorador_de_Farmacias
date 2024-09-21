@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detalleFarmacia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starry"
+    tools:context=".ui.lista.DetalleFarmacia">
+
+    <TextView
+        android:id="@+id/tvNombreD"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#0F0E0E"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDireccionD"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="64dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreD" />
+
+    <TextView
+        android:id="@+id/tvInfoD"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDireccionD" />
+
+    <ImageView
+        android:id="@+id/ivFotoD"
+        android:layout_width="397dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoD"
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

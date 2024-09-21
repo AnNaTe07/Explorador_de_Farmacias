@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_lista">
+
+    <fragment
+        android:id="@+id/nav_lista"
+        android:name="com.softannate.mapamenu.ui.lista.ListaFragment"
+        android:label="@string/menu_lista"
+        tools:layout="@layout/fragment_lista">
+
+        <action
+            android:id="@+id/action_nav_lista_to_detalleFarmacia"
+            app:destination="@id/detalleFarmacia" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_salir"
+        android:name="com.softannate.mapamenu.ui.salir.SalirFragment"
+        android:label="@string/menu_salir"
+        tools:layout="@layout/fragment_salir" />
+    <fragment
+        android:id="@+id/nav_mapa"
+        android:name="com.softannate.mapamenu.ui.mapa.MapaFragment"
+        android:label="@string/menu_mapa"
+        tools:layout="@layout/fragment_mapa">
+
+    </fragment>
+    <fragment
+        android:id="@+id/detalleFarmacia"
+        android:name="com.softannate.mapamenu.ui.lista.DetalleFarmacia"
+        android:label="Farmacia"
+        tools:layout="@layout/fragment_detalle_farmacia" />
+</navigation>
